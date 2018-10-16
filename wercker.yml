@@ -1,11 +1,11 @@
-box: merliseclyde/bart
+box: merliseclyde/predictive-modeling:latest
 
 build:
   steps:
     - script:
         name: Render R markdown
         code: |
-          Rscript -e "install.packages('stargazer', repos='https://cloud.r-project.org');install.packages('reshape2', repos='https://cloud.r-project.org');install.packages('alr3', repos='https://cloud.r-project.org');library(rmarkdown);render('HW4.Rmd')"
+          Rscript -e "install.packages('reshape2', repos='https://cloud.r-project.org');install.packages('alr3', repos='https://cloud.r-project.org');library(rmarkdown);render('HW4.Rmd')"
     - script:
         name: Check for allowed files
         code: |
