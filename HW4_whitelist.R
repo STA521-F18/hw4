@@ -2,7 +2,8 @@ allowed_files = c("HW4.Rmd",
                   "HW4.pdf",
                   "README.md",
                   "HW4_whitelist.R",
-                  "wercker.yml")
+                  "wercker.yml",
+                  "LICENSE")
 
 files = dir()
 disallowed_files = files[!(files %in% allowed_files)]
